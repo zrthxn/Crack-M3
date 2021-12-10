@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="./Crack-M3.js"></script>
+        <title>Crack-M3</title>
+        <style>
+            body {
+                text-align: center;
+            }
+
+            input {
+                font-size: 200%;
+                margin-top: 5em;
+                text-align: center;
+                width: 26em;
+            }
+
+            #result {
+                margin-top: 8em;
+                font-size: 300%;
+                font-family: monospace;
+                font-weight: bold;
+            }
+
+            body.granted>#result::before {
+                content: "Access Granted";
+                color: green;
+            }
+
+            body.denied>#result::before {
+                content: "Access Denied";
+                color: red;
+            }
+
+            #content {
+                display: none;
+            }
+
+            body.granted #content {
+                display: initial;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 style="padding-top: 5px;">
+            <center>Try and get the Access</center>
+        </h1>
+        <div>
+            <input id="keyhole" autofocus="" onchange="open_safe()" placeholder=" ">
+
+        </div>
+        <div id="result">
+        </div>
+
+
+    
+
+
+</body></html>
